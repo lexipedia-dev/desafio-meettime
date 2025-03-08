@@ -1,0 +1,5 @@
+br/com/meettime/desafiooauth/DesafioOauthApplication.class
+br/com/meettime/desafiooauth/HubSpotContactController.class
+br/com/meettime/desafiooauth/OAuth2HubSpotController.class
+br/com/meettime/desafiooauth/OAuth2HubSpotService.class
+br/com/meettime/desafiooauth/SecurityConfig.class

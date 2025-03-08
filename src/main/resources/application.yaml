@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: desafio-oauth
+  security:
+    oauth2:
+      client:
+        registration:
+          hubspot:
+            client-id: 463ea3f3-34ee-45e7-970b-4d16a4da22db
+            client-secret: b57e8343-5f1b-489f-afc2-6c337cf117ee
+            scope:
+              - oauth
+              - crm.objects.contacts.write
+              - crm.schemas.contacts.write
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/oauth2/callback
+        provider:
+          hubspot:
+            authorization-uri: https://app.hubspot.com/oauth/authorize
+            token-uri: https://api.hubapi.com/oauth/v1/token
+            user-info-uri: https://api.hubapi.com/oauth/v1/userinfo
+hubspot:
+  api:
+    base-url: https://api.hubapi.com
