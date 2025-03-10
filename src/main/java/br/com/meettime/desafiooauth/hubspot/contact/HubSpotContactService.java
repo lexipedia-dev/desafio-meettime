@@ -23,7 +23,7 @@ public class HubSpotContactService {
     private final Bucket bucket;
 
     public HubSpotContactService() {
-        Bandwidth limit = Bandwidth.classic(1, Refill.greedy(1, Duration.ofSeconds(5)));
+        Bandwidth limit = Bandwidth.classic(100, Refill.greedy(100, Duration.ofSeconds(10)));
         this.bucket = Bucket.builder().addLimit(limit).build();
     }
 
